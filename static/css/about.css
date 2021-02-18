@@ -1,0 +1,124 @@
+.top{
+    width: 100%; /* 1490/1200 */
+    height: 90px;
+    background-color:white;
+    margin: -1.6% 0 0 0;
+    
+}
+.yazı{
+    font-family: 'Jura', sans-serif;
+    font-size: 25px;
+    padding: 32px 0px 0px 30px;
+    list-style: none;
+    position: relative;
+ }   
+.yazı li{
+    display: inline;
+    padding: 6px;
+    font-family: sans-serif;
+
+}
+.ns{
+    list-style: none;
+    position: relative;
+    bottom: 77%;
+    right: 20px;
+}
+.ns li {
+    display: inline;
+    padding: 6px;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 16px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color:blue;
+}
+.sol-kutu{
+    width: 140%;
+    height: 900px;
+    background-color: #e6dace;
+    margin-left: -20%;
+    margin-top: -30%;
+    position: relative;
+}
+.ft{
+    width: 100%;
+    height: 90px;
+    background-color:white;
+    margin: -16px -35px 0px -12px;
+}
+.tbn{
+    padding: 10px 0px 0px 30px;
+    font-family: 'Jura', sans-serif;
+}
+.call{
+    font-family: 'Jura', sans-serif;
+    position: absolute;
+    left: 1200px;
+    
+      
+}
+.yazar{
+    font-family: 'Jura', sans-serif;
+    position:absolute;
+    left: 1300px;
+}
+.hk{
+    background-color: white;
+    width: 1200px;
+    height: 600px;
+    position: absolute;
+    bottom: 150px;
+    left: 140px;
+    box-shadow: -5px 10px 15px 1px #888888;
+}
+.h{
+    padding-left: 19px;
+    font-family: 'Josefin Sans', sans-serif;
+    padding-top: 1%;
+}
+.ay{
+    width: 150px;
+    height: 2px;
+    background-color: blue;
+    position: absolute;
+    left: 30px;
+    bottom: 530px;
+}
+.foto{
+    width: 200px;
+    height: 200px;
+    background-image: url();
+    position: absolute;
+    bottom: 300px;
+    left: 25px;
+}
+.alt{
+    position: absolute;
+    bottom: 200px;
+    left: 50px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.yaz{
+    position: absolute;
+    left: 250px;
+    font-family: 'Jura', sans-serif;
+    font-size: 25px;
+}
+.tab{
+    margin-top: 5%;
+    margin-left: 22%;
+    font-family: 'Jura', sans-serif;
+    font-size: 20px;
+}
+.liste{
+    font-family: 'Jura', sans-serif;
+    margin-top: 20%;
+    margin-left: 20%;
+}
+
+

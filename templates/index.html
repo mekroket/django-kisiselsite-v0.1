@@ -4,10 +4,10 @@
 {% block body  %}
 
 <!-- Masthead-->
-        <header class="masthead bg-primary text-white text-center">
-            <div class="container d-flex align-items-center flex-column">
+        <header class="masthead bg-danger text-white text-center  " id="kutu">
+            <div class="container    d-flex align-items-center flex-column  " >
                 <!-- Masthead Avatar Image-->
-                <img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="" />
+                <img class="masthead-avatar mb-5" src="{%static 'img/3.svg'%}" alt="" />
                 <!-- Masthead Heading-->
                 <h1 class="masthead-heading text-uppercase mb-0">Kişisel Web Siteme Hoşgeldiniz</h1>
                 <!-- Icon Divider-->
@@ -41,7 +41,7 @@
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="{%static 'img/1.jpg'%}" alt="" />
+                            <img class="img-fluid" src="{%static 'img/4.png'%}" alt="" />
                         </div>
                     </div>
                     <!-- Portfolio Item 2-->
@@ -50,7 +50,7 @@
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/cake.png" alt="" />
+                            <img class="img-fluid" src="{%static 'img/6.jpg'%}" alt="" />
                         </div>
                     </div>
                     <!-- Portfolio Item 3-->
@@ -59,7 +59,7 @@
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/circus.png" alt="" />
+                            <img class="img-fluid" src="{%static 'img/7.jpg'%}" alt="" />
                         </div>
                     </div>
                     <!-- Portfolio Item 4-->
@@ -96,7 +96,7 @@
 
 
 <!-- About Section-->
-        <section class="page-section bg-primary text-white mb-0" id="about" >
+        <section class="page-section bg-danger text-white mb-0 kutu2" id="about"  >
             <div class="container">
                 <!-- About Section Heading-->
                 <h2 class="page-section-heading text-center text-uppercase text-white">Sosyal Medya Yönetimi</h2>
@@ -173,7 +173,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal1Label">Log Cabin</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal1Label">!TAB RESMİ SİTESİ</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -181,10 +181,10 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cabin.png" alt="" />
+                                    <img class="img-fluid rounded mb-5" src="{%static 'img/5.png'%}" alt="" />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-dismiss="modal">
+                                    <p class="mb-5">Yapımı devam etmekte olan resmi ÜnlemTab websitesi ekibi içerisindeyim. Ekipte görevim back-end uygulamalarını yazmak.Siteyi sizler için elimizden geldğince hızlı tamamlamaya çalışıyoruz.</p>
+                                    <button class="btn btn-danger" data-dismiss="modal">
                                         <i class="fas fa-times fa-fw"></i>
                                         Pencereyi Kapat
                                     </button>
@@ -218,7 +218,7 @@
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cake.png" alt="" />
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-dismiss="modal">
+                                    <button class="btn btn-danger" data-dismiss="modal">
                                         <i class="fas fa-times fa-fw"></i>
                                         Pencereyi Kapat
                                     </button>
@@ -252,7 +252,7 @@
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/circus.png" alt="" />
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-dismiss="modal">
+                                    <button class="btn btn-danger" data-dismiss="modal">
                                         <i class="fas fa-times fa-fw"></i>
                                         Pencereyi Kapat
                                     </button>
@@ -286,7 +286,7 @@
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/game.png" alt="" />
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-dismiss="modal">
+                                    <button class="btn btn-danger" data-dismiss="modal">
                                         <i class="fas fa-times fa-fw"></i>
                                         Pencereyi Kapat
                                     </button>
@@ -320,7 +320,7 @@
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/safe.png" alt="" />
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-dismiss="modal">
+                                    <button class="btn btn-danger" data-dismiss="modal">
                                         <i class="fas fa-times fa-fw"></i>
                                        Pencereyi Kapat
                                     </button>
@@ -354,7 +354,7 @@
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/submarine.png" alt="" />
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-dismiss="modal">
+                                    <button class="btn btn-danger" data-dismiss="modal">
                                         <i class="fas fa-times fa-fw"></i>
                                         Pencereyi Kapat
                                     </button>
