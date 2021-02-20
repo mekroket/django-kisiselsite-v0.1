@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'oguzblog',
     "user",
+    
 ]
 
 MIDDLEWARE = [
@@ -124,3 +125,5 @@ import os
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
+
+
