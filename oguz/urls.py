@@ -23,6 +23,7 @@ urlpatterns = [
     path("",views.index, name ="index"),
     path("about/",views.about,name ="about"),
     path("portfoylo/",views.portfoylo,name = "portfoylo"),
+    path("portfoylo2/",views.portfoylo2,name = "portfoylo2"),
     path("contact/",views.contact,name ="contact"),
     path("user/",include("user.urls"),)
 ]

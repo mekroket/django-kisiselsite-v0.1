@@ -168,61 +168,25 @@
                 </div>
                 <div class="card-box">
                     <h4 class="header-title mb-3">Yapım Aşamasındaki Projeler</h4>
+                    Hoşgeldiniz <small>{{request.user.username}}</small>
+                    {% if articles %}
+                            <tbody>
+                            {% for article in articles  %}
+                    
                     <div class="table-responsive">
                         <table class="table">
-                            <thead>
                                 <tr>
-                                    <th>#</th>
-                                    <th>Proje Adı</th>
-                                    <th>Başlangıç Tarihi</th>
-                                    <th>Bitiş Tarihi</th>
-                                    <th>İçerik</th>
-                                    <th>Tür</th>
+                                    <td>{{article.id}}</td>
+                                    <td>{{article.title}}</td>
+                                    <td>{{article.author}}</td>
+                                    <td>{{article.created_date}}</td>
                                 </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Adminox Admin</td>
-                                    <td>01/01/2015</td>
-                                    <td>07/05/2015</td>
-                                    <td><span class="label label-info">Work in Progress</span></td>
-                                    <td>Coderthemes</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Adminox Frontend</td>
-                                    <td>01/01/2015</td>
-                                    <td>07/05/2015</td>
-                                    <td><span class="label label-success">Pending</span></td>
-                                    <td>Coderthemes</td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>Adminox Admin</td>
-                                    <td>01/01/2015</td>
-                                    <td>07/05/2015</td>
-                                    <td><span class="label label-pink">Done</span></td>
-                                    <td>Coderthemes</td>
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td>Adminox Frontend</td>
-                                    <td>01/01/2015</td>
-                                    <td>07/05/2015</td>
-                                    <td><span class="label label-purple">Work in Progress</span></td>
-                                    <td>Coderthemes</td>
-                                </tr>
-                                <tr>
-                                    <td>5</td>
-                                    <td>Adminox Admin</td>
-                                    <td>01/01/2015</td>
-                                    <td>07/05/2015</td>
-                                    <td><span class="label label-warning">Coming soon</span></td>
-                                    <td>Coderthemes</td>
-                                </tr>
+                                {% endfor %}
                             </tbody>
                         </table>
+                        {% else %}
+                        <div class="alert alert-danger">Henüz Bir Projemiz Bulunmuyor Beklemede Kalın</div>
+                        {% endif %}
                     </div>
                 </div>
             </div>
