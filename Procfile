@@ -1,0 +1,1 @@
+web : gunicorn oguz.wsgi --log-file -
