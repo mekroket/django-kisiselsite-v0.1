@@ -4,7 +4,23 @@
 {% block body %}
 
 <br><br><br> <br><br><br>
+{% if request.user.is_authenticated %}
+                
+                <div class="alert alert-warning">Giriş Yapılmış, {{request.user.username}}</div>
+                {% if messages %}
+                
+                    {% for message in messages %}
+                    {% if message.tags == "info" %}
+                    <div class="alert alert-danger">{{ message }}</div>
+                    {% else %}
+                    <div class="alert alert-{{ message.tags }}">{{ message }}</div>
 
+                    {% endif %}
+
+
+                    {% endfor %}
+                
+                {% endif %}
 <div class="content">
     <div class="container">
         <div class="row">
@@ -216,8 +232,14 @@
     </div>
     <!-- container -->
 </div>
-
-
+{% else %}
+            <br>
+                <div class="alert alert-danger">Bizim hakkımızda daha fazla bilgi alabilmek için Kayıt olmanız gerekmektedir,
+                Zaten Kayıtlı İseniz Lütfen Giriş yapınız
+                </div>
+            {% endif %}
+        </p>
+<br><br><br><br><br><br><br><br><br><br>
 
 {% endblock body %}
 

@@ -2,8 +2,9 @@ body {
 	margin:  0;
 }
 .page-content {
-	width: 100%;
+	width: 140%;
 	margin:  0 auto;
+    margin-left: -20%;
 	background-image: -moz-linear-gradient( 136deg, rgb(254,225,64) 0%, rgb(250,112,154) 100%);
     background-image: -webkit-linear-gradient( 136deg, rgb(254,225,64) 0%, rgb(250,112,154) 100%);
     background-image: -ms-linear-gradient( 136deg, rgb(254,225,64) 0%, rgb(250,112,154) 100%);

@@ -1,7 +1,39 @@
 {% extends "base.html" %}
-
+{% load static %}
 {% block body %}
-<h3>Giriş Yap</h3>
-<hr>
+
+
+
+
+<div class="page-content">
+		<div class="form-v7-content">
+			<div class="form-left">
+				<img src="{%static 'img/12.jpg'%}" alt="form">
+				<p class="text-1">Giriş Yap</p>
+				<p class="text-2"><a href="#" style="color:white;">Gizlilik Sözleşmesi</a> </p>
+			</div>
+			<form class="form-detail" action="#" method="post" id="myform">
+                {% csrf_token %}                
+				<div class="form-row">
+					<label for="username">Kullanıcı Adı</label>
+					<input type="text" name="username" id="username" class="input-text" placeholder="Kullanıcı Adı">
+				</div>
+				
+				<div class="form-row">
+					<label for="password">Şifre</label>
+					<input type="password" name="password" id="password" class="input-text" required placeholder="Şifre">
+				</div>
+              
+			
+				<div class="form-row-last">
+					<input type="submit" name="login" class="register" value="Giriş Yap">
+					<p>Yada<a href="#">Kayıt Ol</a></p>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+
 
 {% endblock body %}

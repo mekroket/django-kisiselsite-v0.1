@@ -3,43 +3,37 @@
 {% block body %}
 
 
-<h3>Kayıt Ol</h3>
-<hr>
-<br><br><br><br><br><br><br><br>
-<form method="post">
-    {% csrf_token %}
-    {{form.as_p}}
-    <button style="submit" class="btn btn-danger">Kayıt Ol</button>
-</form>
-<br><br><br><br><br><br><br><br>
 
-<div class="page-content kutu3">
-		<div class="form-v7-content" >
+<div class="page-content ">
+		<div class="form-v7-content">
 			<div class="form-left">
-				<img src="{%static 'img/9.jpg'%}" alt="form">
-				<p class="text-1" style="color:black;">Üye Ol</p>
-				<p class="text-2">Gizlilik Sözleşmesi</p>
+				<img src="{%static 'img/12.jpg'%}" alt="form">
+				<p class="text-1">Üye Ol</p>
+				<p class="text-2"> <a href="#" style="color:white;">Gizlilik Sözleşmesi</a> </p>
 			</div>
-			<form class="form-detail" action="#" method="post" id="myform">
+			<form class="form-detail " action="#" method="post" id="myform">
+                {% csrf_token %}
 				<div class="form-row">
 					<label for="username">Kullanıcı Adı</label>
-					<input type="text" name="username" id="username" class="input-text">
+					{{form.username}}
+				</div>
+				<div class="form-row">
+					<label for="your_email">E-mail</label>
+					{{form.email}}
 				</div>
 				<div class="form-row">
 					<label for="password">Şifre</label>
-					<input type="password" name="password" id="password" class="input-text" required>
-				</div>
-				<div class="form-row">
-					<label for="comfirm_password">Şifrenizi Doğrulayın</label>
-					<input type="password" name="comfirm_password" id="comfirm_password" class="input-text" required>
+					{{form.password}}
 				</div>
 				<div class="form-row-last">
 					<input type="submit" name="register" class="register" value="Kayıt Ol">
 					<p>Yada<a href="/user/login">Giriş Yap</a></p>
 				</div>
-			
+			</form>
 		</div>
 	</div>
+    
+
     
 
 
